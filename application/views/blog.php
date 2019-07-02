@@ -9,7 +9,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 	</head>
 	<body>
 		<div id="container">
-			<h1>Welcome to Selectal!</h1>
+			<h1>This is the blog</h1>
 		</div>
 	</body>
 </html>
