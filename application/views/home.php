@@ -19,15 +19,15 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 		<div id="header" class="gradient shadow-inset-bottom">
 			<h1>Selectal</h1>
 			<ul class="navbar" id="main-navbar">
-				<li><a href="#install">Install</a></li>
-				<li><a href="#use">Use</a></li>
-				<li><a href="#customize">Customize</a></li>
+				<li><a class="install-trigger">Install</a></li>
+				<li><a class="use-trigger">Use</a></li>
+				<li><a class="customize-trigger">Customize</a></li>
 			</ul>
 		</div>
 
 		<div class="content">
 			<div class="section" id="install">
-				<h2>Install</h2>
+				<h2 class="install-trigger">Install</h2>
 				<div class="horizontal-line"></div>
 				<p>Run the following command:</p>
 				<p class="code">npm install selectal</p>
@@ -36,7 +36,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 			</div>
 
 			<div class="section" id="use">
-				<h2>Use</h2>
+				<h2 class="use-trigger">Use</h2>
 				<div class="horizontal-line"></div>
 				<p>Include the styling in your html:</p>
 				<p class="code">
@@ -66,7 +66,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 
 
 			<div class="section" id="customize">
-				<h2>Customize</h2>
+				<h2 class="customize-trigger">Customize</h2>
 				<div class="horizontal-line"></div>
 				<p>The following classes can be used to customize your select box:</p>
 				<br>
@@ -105,7 +105,8 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 				<p>kovee98@gmail.com</p>
 			</div>
 		</div>
-
+		
+		<script type="text/javascript" src="<?php echo base_url('node_modules/moveto/dist/moveTo.min.js');?>"></script>
 		<script type="text/javascript" src="<?php echo base_url('assets/js/main.js');?>"></script>
 	</body>
 </html>

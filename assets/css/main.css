@@ -35,6 +35,9 @@ body {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent; }
 
+[class$=-trigger] {
+  cursor: pointer; }
+
 #header {
   color: white;
   font-size: 3em;

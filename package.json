@@ -1,0 +1,22 @@
+{
+  "name": "selectal-website",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.php",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Kovee98/selectal-website.git"
+  },
+  "author": "Joshua Kovalchik",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Kovee98/selectal-website/issues"
+  },
+  "homepage": "https://github.com/Kovee98/selectal-website#readme",
+  "dependencies": {
+    "moveto": "^1.8.2"
+  }
+}
