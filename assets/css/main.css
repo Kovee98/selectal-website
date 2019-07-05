@@ -1,5 +1,5 @@
 @import url(https://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css);
-@import url(https://fonts.googleapis.com/css?family=Nunito&display=swap);
+@import url(https://fonts.googleapis.com/css?family=Nunito:400,600&display=swap);
 * {
   font-family: 'Nunito', sans-serif;
   margin: 0;
@@ -36,38 +36,45 @@ body {
   -webkit-text-fill-color: transparent; }
 
 #header {
+  color: white;
+  font-size: 3em;
+  text-align: center;
   width: 100%;
   height: 750px;
-  color: white;
-  font-weight: bold;
-  text-align: center;
-  font-size: 3em;
   vertical-align: middle;
   display: flex;
   flex-flow: column wrap;
   justify-content: center;
-  align-items: center;
-  position: -webkit-sticky;
-  position: sticky; }
+  align-items: center; }
+  #header h1 {
+    font-weight: 600; }
 
-#fork {
-  position: relative;
-  z-index: 200;
-  width: 300px;
-  height: 25px;
-  transform: rotate(45deg);
+#fork-wrapper {
   position: absolute;
-  top: 43px;
-  right: -97px;
-  background: #6d6d6d;
-  border: 2px solid #b5b5b5;
-  color: white;
-  font-size: 0.85em;
-  text-align: center;
-  vertical-align: middle;
-  line-height: 25px;
-  -webkit-box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.5);
-  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.5); }
+  z-index: 100;
+  top: 0px;
+  right: 0px;
+  width: 150px;
+  height: 150px;
+  overflow: hidden; }
+  #fork-wrapper a {
+    text-decoration: none; }
+  #fork-wrapper #fork {
+    position: relative;
+    top: 43px;
+    right: 57px;
+    width: 300px;
+    height: 25px;
+    transform: rotate(45deg);
+    background: #6d6d6d;
+    border: 2px solid #b5b5b5;
+    color: white;
+    font-size: 0.85em;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 25px;
+    -webkit-box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.5);
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.5); }
 
 .shadow-inset-bottom {
   -webkit-box-shadow: inset 0 -20px 15px -15px #3c3c3c;
@@ -159,6 +166,11 @@ h2 {
   #footer > div img {
     width: 50px;
     cursor: pointer; }
+  #footer h2 {
+    text-align: center; }
+
+#projects, #name, #contact {
+  width: 250px; }
 
 .white-filter {
   filter: brightness(0) invert(1); }

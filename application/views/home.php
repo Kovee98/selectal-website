@@ -5,12 +5,16 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 <html lang="en">
 	<head>
 		<meta charset="utf-8">
-		<title>Selectal</title>
+		<title>Selectal | Select box styling made simple and fun</title>
 		<link rel="shortcut icon" type="image/png" href="<?php echo base_url('assets/img/selectal_logo.png');?>"/>
 		<link rel="stylesheet" type="text/css" href="<?php echo base_url('assets/css/main.css');?>">
 	</head>
 	<body>
-		<a href="https://github.com/Kovee98/selectal" target="_blank"><div id="fork">Fork me on GitHub</div></a>
+		<div id="fork-wrapper">
+			<a href="https://github.com/Kovee98/selectal" target="_blank">
+				<div id="fork">Fork me on GitHub</div>
+			</a>
+		</div>
 
 		<div id="header" class="gradient shadow-inset-bottom">
 			<h1>Selectal</h1>
@@ -22,7 +26,6 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 		</div>
 
 		<div class="content">
-
 			<div class="section" id="install">
 				<h2>Install</h2>
 				<div class="horizontal-line"></div>
@@ -35,29 +38,29 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 			<div class="section" id="use">
 				<h2>Use</h2>
 				<div class="horizontal-line"></div>
-
-				<p>In the javascript files where you need it:</p>
+				<p>Include the styling in your html:</p>
+				<p class="code">
+					<?php
+						echo htmlspecialchars("<link rel=\"stylesheet\" href=\"<installation_directory>/selectal.min.css\"");
+					?>
+				</p>
 				<br>
+				<br>
+				<p>Include the code as an npm package in your javascript:</p>
 				<p class="code">
 					const selectal = require('selectal');
-					<br>
+				</p>
+				<p>...or as a script in your html:</p>
+				<p class="code">
+					<?php
+						echo htmlspecialchars("<script src='<installation_directory>/selectal.min.js'>");
+					?>
+				</p>
+				<br>
+				<br>
+				<p>Then just initialize your select box:</p>
+				<p class="code">
 					var mySelect = new Selectal('#my-select');
-				</p>
-				<br>
-				<p>or include</p>
-				<br>
-				<p class="code">
-					<?php
-						echo htmlspecialchars("<script src='<installation_directory>/dist/selectal.min.js'>"); 
-					?>
-				</p>
-				<br>
-				<p>in your html. and include the base styling by including the script in your html:</p>
-				<br>
-				<p class="code">
-					<?php
-						echo htmlspecialchars("<link rel=\"stylesheet\" href=\"<installation_directory>/dist/selectal.min.css\" crossorigin=\"anonymous\"> ");
-					?>
 				</p>
 			</div>
 
@@ -65,7 +68,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 			<div class="section" id="customize">
 				<h2>Customize</h2>
 				<div class="horizontal-line"></div>
-				<p>Use the following classes to customize to your hearts content.</p>
+				<p>The following classes can be used to customize your select box:</p>
 				<br>
 				<p><strong>Classes</strong></p>
 				<img src="<?php echo base_url('assets/img/styling_diagram.png');?>">
@@ -79,7 +82,6 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 				            	<br><span style="color:#ff3333;	margin-left:120px">selectal-dropdown-option</span>
 				</h3>
 			</div>
-
 		</div>
 		
 		<div class="shadow-inset-top" id="footer">
@@ -93,7 +95,9 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 			</div>
 
 			<div class="dot"></div>
-			<h2 class="gradient-text">Selectal</h2>
+			<div id="name">
+				<h2 class="gradient-text">Selectal</h2>
+			</div>
 			<div class="dot"></div>
 
 			<div id="contact">
