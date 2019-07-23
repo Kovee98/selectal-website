@@ -83,10 +83,16 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 					<div class="title">Description</div>
 					<div class="cell">toggleDropdown</div>
 					<div class="cell">Toggles the dropdown open (if it's closed) or closed (if it's open)</div>
-					<div class="cell darker">addEventListener</div>
-					<div class="cell darker">Adds an event listener</div>
-					<div class="cell">removeEventListener</div>
-					<div class="cell">Removes a previously added event listener</div>
+					<div class="cell darker">isDropdownOpen</div>
+					<div class="cell darker">Returns whether or not the dropdown is currently opened</div>
+					<div class="cell">openDropdown</div>
+					<div class="cell">Opens the dropdown</div>
+					<div class="cell darker">closeDropdown</div>
+					<div class="cell darker">Closes the dropdown</div>
+					<div class="cell">addEventListener</div>
+					<div class="cell">Adds an event listener</div>
+					<div class="cell darker">removeEventListener</div>
+					<div class="cell darker">Removes a previously added event listener</div>
 				</div>
 			</div>
 
@@ -97,13 +103,14 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 				<p>The following classes can be used to customize your select box:</p>
 				<br>
 				<h3><strong>Classes:</strong></h3>
-				<img src="<?php echo base_url('assets/img/styling_diagram.png');?>">
+				<img src="https://raw.githubusercontent.com/Kovee98/selectal/develop/styling_diagram.png">
 				<h3>
-			    	<br><span style="color:#007FFF;			margin-left:0px">selectal-group</span>
-			        	<br><span style="color:#00cc00;		margin-left:40px">selectal-btn</span>
-			            	<br><span style="color:#FFFF33;	margin-left:80px">selectal-selected-item</span>
-			        	<br><span style="color:#f07b27;		margin-left:40px">selectal-dropdown</span>
-			            	<br><span style="color:#ff3333;	margin-left:80px">selectal-dropdown-option</span>
+			    	<br><span style="margin-left:0px">selectal-group (wrapper)</span>
+			        	<br><span style="color:rgb(0, 127, 255);		margin-left:40px">selectal-btn</span>
+			            	<br><span style="color:rgb(0, 204, 0);		margin-left:80px">selectal-selected-item</span>
+			            	<br><span style="color:rgb(255, 255, 0);	margin-left:80px">arrow-[up|down]</span>
+			        	<br><span style="color:rgb(117, 32, 252);		margin-left:40px">selectal-dropdown</span>
+			            	<br><span style="color:rgb(240, 123, 39);	margin-left:80px">selectal-dropdown-option</span>
 				</h3>
 			</div>
 		</div>
