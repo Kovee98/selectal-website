@@ -81,18 +81,22 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 				<div class="table">
 					<div class="title">Method</div>
 					<div class="title">Description</div>
-					<div class="cell">toggleDropdown</div>
+					<div class="cell">toggleDropdown()</div>
 					<div class="cell">Toggles the dropdown open (if it's closed) or closed (if it's open)</div>
-					<div class="cell darker">isDropdownOpen</div>
+					<div class="cell darker">isDropdownOpen()</div>
 					<div class="cell darker">Returns whether or not the dropdown is currently opened</div>
-					<div class="cell">openDropdown</div>
+					<div class="cell">openDropdown()</div>
 					<div class="cell">Opens the dropdown</div>
-					<div class="cell darker">closeDropdown</div>
+					<div class="cell darker">closeDropdown()</div>
 					<div class="cell darker">Closes the dropdown</div>
-					<div class="cell">addEventListener</div>
+					<div class="cell">addEventListener(event, callback)</div>
 					<div class="cell">Adds an event listener</div>
-					<div class="cell darker">removeEventListener</div>
+					<div class="cell darker">removeEventListener(eventName)</div>
 					<div class="cell darker">Removes a previously added event listener</div>
+					<div class="cell">getValue()</div>
+					<div class="cell">Returns the value of what is currently selected</div>
+					<div class="cell darker">setValue(value)</div>
+					<div class="cell darker">Sets the selected value to whatever is passed in</div>
 				</div>
 			</div>
 
