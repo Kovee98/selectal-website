@@ -32,3 +32,4 @@ user_guide_src/cilexer/pycilexer.egg-info/*
 
 *.map
 assets/.sass-cache
+node_modules/*

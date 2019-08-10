@@ -1,6 +1,6 @@
 {
   "name": "selectal-website",
-  "version": "1.4.0",
+  "version": "1.4.2",
   "description": "",
   "main": "index.php",
   "scripts": {
@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/Kovee98/selectal-website#readme",
   "dependencies": {
-    "moveto": "^1.8.2"
+    "moveto": "^1.8.2",
+    "prismjs": "^1.17.1"
   }
 }
