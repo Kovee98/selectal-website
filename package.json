@@ -18,6 +18,6 @@
   "homepage": "https://github.com/Kovee98/selectal-website#readme",
   "dependencies": {
     "moveto": "^1.8.2",
-    "prismjs": "^1.17.1"
+    "prismjs": "^1.21.0"
   }
 }
